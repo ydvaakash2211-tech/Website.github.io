@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Malta International Medical Centre (Demo)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,500;6..72,700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<p class="demo-banner">Demonstration website. Doctors, phone numbers, emails and the address are fictional.</p>
+
+<header class="site-header">
+  <a href="#top" class="brand"><span class="brand-mark"><i class="fas fa-cross"></i></span>
+    <span class="brand-name">Malta International<small>Medical Centre</small></span></a>
+  <nav class="main-menu" aria-label="Main navigation">
+    <a href="#about">About</a><a href="#specialists">Doctors</a><a href="#services">Services</a>
+    <a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+  </nav>
+  <div class="header-actions">
+    
+    <a href="#appointment" class="btn btn-red">Book a visit</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false"><i class="fas fa-bars"></i></button>
+  </div>
+</header>
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+<aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile navigation">
+  <button class="drawer-close" id="drawerClose" aria-label="Close menu"><i class="fas fa-times"></i></button>
+  <a href="#about">About</a><a href="#specialists">Doctors</a><a href="#services">service</a>
+  <a href="#gallery">Gallery</a><a href="#contact">Contact</a>
+  
+  <a href="#appointment" class="btn btn-red">Book a visit</a>
+</aside>
+
+<main id="top">
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Specialist care, on the island you call home or visit.</h1>
+      <p>Malta International Medical Centre brings consultants, diagnostics and day-surgery together in Sliema, with English, Maltese and Italian spoken at every desk.</p>
+      <div class="hero-buttons">
+        <a href="#appointment" class="btn btn-red">Book a visit</a>
+        <button class="btn btn-outline" id="openInfoModal">Visitor information</button>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img
+    src="https://images.unsplash.com/photo-1764885449332-7eb941d53b7e?auto=format&fit=crop&w=1400&q=85"
+    alt="Modern hospital building with trees and a welcoming entrance"
+    width="1400"
+    height="1000"
+    fetchpriority="high">
+      <ul class="hero-facts">
+        <li><strong>24 hours</strong> urgent care desk</li>
+        <li><strong>18</strong> consultants (demo)</li>
+        <li><strong>Since 2009</strong> in Sliema</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>A medical centre built for residents and visitors</h2>
+    <p class="lead">We offer clear pricing, same-week specialist appointments and reports you can take home to your own doctor.</p>
+    <div class="grid grid-4">
+      <article class="panel"><i class="fas fa-bullseye"></i><h3>Our mission</h3><p>Make good specialist care easy to reach for everyone in Malta and Gozo.</p></article>
+      <article class="panel"><i class="fas fa-language"></i><h3>Your language</h3><p>Staff speak English, Maltese, Italian and Arabic. Interpreters are available on request.</p></article>
+      <article class="panel"><i class="fas fa-passport"></i><h3>Visitor friendly</h3><p>We provide reports and invoices that travel insurers and EU health schemes accept.</p></article>
+      <article class="panel"><i class="fas fa-shield-heart"></i><h3>Safe practice</h3><p>Clinical audits twice a year and a published infection-control policy.</p></article>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="specialists">
+    <h2>Meet the specialists</h2>
+    <p class="lead">Fictional profiles for demonstration only.</p>
+    <div class="grid grid-4">
+      <article class="doctor"><img class="doctor-photo" src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?auto=format&fit=crop&w=600&q=80" width="600" height="700" loading="lazy" alt="Portrait of a female cardiologist in a white coat with a stethoscope (Dr. Maria Camilleri)"><h3>Dr. Maria Camilleri</h3><p class="role">Cardiology</p><p>Heart-rhythm clinic and preventive cardiology.</p><p class="fee">Consultation: &euro;70</p><a href="#appointment" class="btn btn-small">Book</a></article>
+      <article class="doctor"><img class="doctor-photo" src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?auto=format&fit=crop&w=600&q=80" width="600" height="700" loading="lazy" alt="Portrait of a male neurologist in a white coat in a hospital corridor (Dr. Joseph Borg)"><h3>Dr. Joseph Borg</h3><p class="role">Neurology</p><p>Headache, epilepsy and movement disorders.</p><p class="fee">Consultation: &euro;80</p><a href="#appointment" class="btn btn-small">Book</a></article>
+      <article class="doctor"><img class="doctor-photo" src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?auto=format&fit=crop&w=600&q=80" width="600" height="700" loading="lazy" alt="Portrait of a female orthopaedic specialist in a white coat (Dr. Anna Vella)"><h3>Dr. Anna Vella</h3><p class="role">Orthopaedics</p><p>Sports injuries, joint replacement and rehabilitation.</p><p class="fee">Consultation: &euro;65</p><a href="#appointment" class="btn btn-small">Book</a></article>
+      <article class="doctor"><img class="doctor-photo" src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=600&q=80" width="600" height="700" loading="lazy" alt="Portrait of a male paediatrician in a white coat smiling (Dr. Mark Farrugia)"><h3>Dr. Mark Farrugia</h3><p class="role">Paediatrics</p><p>Child health, vaccinations and development checks.</p><p class="fee">Consultation: &euro;55</p><a href="#appointment" class="btn btn-small">Book</a></article>
+    </div>
+  </section>
+
+  <section class="section" id="services">
+    <h2>Services</h2>
+    <div class="grid grid-3 service-grid">
+      <article class="service-card"><img src="https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=700&q=80" width="700" height="480" loading="lazy" alt="Paramedics and an ambulance ready outside an emergency department"><div class="service-body"><h3>Emergency</h3><p>Urgent care desk open 24 hours, with ambulance coordination via 112.</p></div></article>
+      <article class="service-card"><img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=700&q=80" width="700" height="480" loading="lazy" alt="Cardiologist reviewing heart test results with a stethoscope"><div class="service-body"><h3>Cardiology</h3><p>ECG, echocardiogram and stress testing in one visit.</p></div></article>
+      <article class="service-card"><img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=700&q=80" width="700" height="480" loading="lazy" alt="Neurology specialist examining brain scan images"><div class="service-body"><h3>Neurology</h3><p>Assessment, EEG and follow-up plans.</p></div></article>
+      <article class="service-card"><img src="https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=700&q=80" width="700" height="480" loading="lazy" alt="Orthopaedic team reviewing an X-ray of a joint"><div class="service-body"><h3>Orthopaedics</h3><p>Imaging, injections and physiotherapy referrals.</p></div></article>
+      <article class="service-card"><img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=700&q=80" width="700" height="480" loading="lazy" alt="Paediatric care with a child-friendly examination"><div class="service-body"><h3>Paediatrics</h3><p>Check-ups and vaccinations in a child-friendly room.</p></div></article>
+      <article class="service-card"><img src="https://images.unsplash.com/photo-1582750433449-648ed127bb54?auto=format&fit=crop&w=700&q=80" width="700" height="480" loading="lazy" alt="Medical laboratory technician preparing diagnostic samples"><div class="service-body"><h3>Diagnostic laboratory</h3><p>Blood tests, imaging and results shared the same day.</p></div></article>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="gallery">
+    <h2>Around the centre</h2>
+    <p class="lead">Representative stock photography used for demonstration.</p>
+    <div class="grid grid-3 gallery">
+      <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=700&q=80" width="700" height="520" loading="lazy" alt="Modern hospital exterior with glass facade"><figcaption>Hospital exterior</figcaption></figure>
+      <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1519494140681-8b17d830a3e9?auto=format&fit=crop&w=700&q=80" width="700" height="520" loading="lazy" alt="Bright hospital reception area with a front desk"><figcaption>Reception</figcaption></figure>
+      <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1551190822-a9333d879b1f?auto=format&fit=crop&w=700&q=80" width="700" height="520" loading="lazy" alt="Team of doctors discussing a patient case together"><figcaption>Doctors working together</figcaption></figure>
+      <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=700&q=80" width="700" height="520" loading="lazy" alt="Clean modern patient room with a hospital bed"><figcaption>Patient room</figcaption></figure>
+      <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=700&q=80" width="700" height="520" loading="lazy" alt="Medical laboratory equipment and microscope"><figcaption>Medical equipment</figcaption></figure>
+      <figure class="gallery-item"><img src="https://images.unsplash.com/photo-1504439468489-c8920d796a29?auto=format&fit=crop&w=700&q=80" width="700" height="520" loading="lazy" alt="Surgical team in a hospital operating theatre"><figcaption>Operating theatre</figcaption></figure>
+    </div>
+  </section>
+
+  <section class="section voices">
+    <blockquote class="testimonial">
+      <p>I was visiting from Sicily with a broken wrist. I was seen, scanned and treated in one morning, and the report was in Italian.</p>
+      <footer>Giulia R., visitor (fictional testimonial)</footer>
+    </blockquote>
+    <div class="newsletter">
+      <h2>Monthly health notes</h2>
+      <p>Seasonal advice from our doctors, once a month.</p>
+      <div class="newsletter-row">
+        <input type="email" id="newsletterEmail" placeholder="Your email address" aria-label="Email address">
+        <button class="btn btn-red" id="newsletterButton">Subscribe</button>
+      </div>
+      <p class="form-note" id="newsletterMessage"></p>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Contact us</h2>
+    <div class="contact-layout">
+      <div class="contact-info">
+        <p><i class="fas fa-location-dot"></i> Triq il-Port 24, Sliema SLM 1010, Malta (fictional)</p>
+        <p><i class="fas fa-phone"></i> Reception: +356 2000 0100</p>
+        <p><i class="fas fa-truck-medical"></i> Emergency: call 112</p>
+        <p><i class="fas fa-envelope"></i> hello@maltamedical.example</p>
+        <p><i class="fas fa-clock"></i> Mon to Sat, 08:00 to 20:00</p>
+      </div>
+      <form id="contactForm" class="form" novalidate>
+        <label for="contactName">Name</label>
+        <input id="contactName" type="text"><small class="field-error" id="contactNameError"></small>
+        <label for="contactEmail">Email</label>
+        <input id="contactEmail" type="email"><small class="field-error" id="contactEmailError"></small>
+        <label for="contactSubject">Subject</label>
+        <input id="contactSubject" type="text"><small class="field-error" id="contactSubjectError"></small>
+        <label for="contactMessage">Message</label>
+        <textarea id="contactMessage" rows="4"></textarea><small class="field-error" id="contactMessageError"></small>
+        <button type="submit" class="btn btn-red">Send message</button>
+        <p class="form-note" id="contactStatus"></p>
+      </form>
+    </div>
+  </section>
+
+  <section class="section section-tint" id="appointment">
+    <h2>Book an appointment</h2>
+    <form id="appointmentForm" class="form form-narrow" novalidate>
+      <label for="patientName">Full name</label>
+      <input id="patientName" type="text"><small class="field-error" id="patientNameError"></small>
+      <label for="patientEmail">Email</label>
+      <input id="patientEmail" type="email"><small class="field-error" id="patientEmailError"></small>
+      <label for="patientPhone">Phone (Malta mobile or +356)</label>
+      <input id="patientPhone" type="tel" placeholder="9912 3456"><small class="field-error" id="patientPhoneError"></small>
+      <label for="patientDoctor">Specialist</label>
+      <select id="patientDoctor">
+        <option value="">Choose a specialist</option>
+        <option>Dr. Maria Camilleri, Cardiology</option>
+        <option>Dr. Joseph Borg, Neurology</option>
+        <option>Dr. Anna Vella, Orthopaedics</option>
+        <option>Dr. Mark Farrugia, Paediatrics</option>
+      </select><small class="field-error" id="patientDoctorError"></small>
+      <label for="patientDate">Preferred date</label>
+      <input id="patientDate" type="date"><small class="field-error" id="patientDateError"></small>
+      <label for="patientNote">Message (optional)</label>
+      <textarea id="patientNote" rows="3"></textarea>
+      <button type="submit" class="btn btn-red">Confirm appointment</button>
+      <p class="form-note" id="appointmentStatus"></p>
+    </form>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div><h3>Malta International Medical Centre</h3><p>Demonstration project. All people, numbers and addresses are fictional.</p></div>
+    <div><h4>Centre</h4><a href="#about">About</a><a href="#specialists">Specialists</a><a href="#services">Services</a></div>
+    <div><h4>Patients</h4><a href="#appointment">Book a visit</a><a href="LoginForm.html">Patient login</a><a href="#contact">Contact</a></div>
+    <div><h4>Visit</h4><p>Triq il-Port 24<br>Sliema SLM 1010, Malta</p></div>
+  </div>
+  <p class="footer-bottom">&copy; 2026 Malta International Medical Centre (student demo)</p>
+</footer>
+
+<button class="to-top" id="toTopButton" aria-label="Back to top"><i class="fas fa-arrow-up"></i></button>
+
+<div class="modal" id="infoModal" role="dialog" aria-modal="true" aria-labelledby="infoModalTitle">
+  <div class="modal-box">
+    <button class="modal-close" id="closeInfoModal" aria-label="Close">&times;</button>
+    <h2 id="infoModalTitle">Visitor information</h2>
+    <ul class="modal-list">
+      <li><strong>Founded by:</strong> Dr. Elena Zammit (fictional)</li>
+      <li><strong>Opening hours:</strong> Mon to Sat, 08:00 to 20:00; urgent desk 24 hours</li>
+      <li><strong>Capacity:</strong> 40 beds, 6 day-surgery theatres (demo figures)</li>
+      <li><strong>Emergency:</strong> call 112 for ambulance services in Malta</li>
+      <li><strong>Parking:</strong> Underground car park, entrance on Triq il-Port</li>
+    </ul>
+  </div>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>
